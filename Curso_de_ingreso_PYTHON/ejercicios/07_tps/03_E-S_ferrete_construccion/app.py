@@ -63,27 +63,7 @@ class App(customtkinter.CTk):
         self.btn_calcular.grid(row=3, pady=10, columnspan=2, sticky="nsew")
 
     def btn_calcular_on_click(self):
-        largo = self.txt_largo.get()
-        largo = float(largo)
-        
-        ancho = self.txt_ancho.get()
-        ancho = float(ancho)
-        
-        metros_cuadrados= largo * ancho
-        perimetro = 2 * (ancho+largo)
-        
-        resultado_final = f"Los metros cuadrados son de {metros_cuadrados} y el perimetro es de {perimetro}"
-    
-        
-        poste_de_quebracho_grueso = float(2.4)
-        
-        if (perimetro>250):
-            print(f"hay {poste_de_quebracho_grueso} de postes de quebracho")
-            alert(title="postes de quebracho",message=poste_de_quebracho_grueso)
-
-
-        alert(title="El largo y ancho es ", message=resultado_final)
-        
+        pass
 
 
 if __name__ == "__main__":
